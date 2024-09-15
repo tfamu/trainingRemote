@@ -117,6 +117,8 @@ public class Main {
 				System.out.println(employee.getTen() + ": " + "Luong " + employee.getLuong() + "Trieu");
 			}
 		}
+		System.out.println("test")
 	}
+
 
 }

@@ -1,5 +1,6 @@
 package listTraining;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -108,17 +109,37 @@ public class Main {
 		System.out.println(
 				ten5 + " " + tuoi5 + " tuoi " + gioitinh5 + " " + queQuan5 + " " + luong5 + " trieu " + chucVu5);
 
-		List<Employee> employees = Arrays.asList(hito1, hito2, hito3, hito4, hito5, hito6);
+		List<Employee> employeeList = new ArrayList<>();
 
-//		in lương trên 30tr
+		employeeList.add(hito1);
+		employeeList.add(hito4);
+		employeeList.add(hito5);
+		employeeList.add(hito2);
+		employeeList.add(hito3);
+		employeeList.add(hito6);
+
+//		in lương trên 20tr
 		System.out.println("danh sach nhan vien luong tren 20tr:");
-		for (Employee employee : employees) {
+		for (Employee employee : employeeList) {
+
 			if (employee.getLuong() > 20.0) {
 				System.out.println(employee.getTen() + ": " + "Luong " + employee.getLuong() + "Trieu");
 			}
-		}
-		System.out.println("test");
-	}
 
+		}
+		System.out.println(" ");
+//		In ra tổng số nhân viên nam cùng với tên những nhân viên nam:
+		for (Employee employee : employeeList) {
+			if (employee.getGioiTinh()) {
+				System.out.println("Nam: " + employee.getTen() + " ");
+				System.out.println(" ");
+			} else {
+				System.out.println("Nu:" + employee.getTen() + " ");
+				System.out.println(" ");
+			}
+		}
+		System.out.println("tong so nhan vien Nam trong cong ty la : " + employeeList.size());
+
+	}
 
 }

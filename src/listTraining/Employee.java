@@ -4,7 +4,7 @@ public class Employee {
 	// viet tiep...
 	private String ten;
 	private int tuoi;
-	boolean gioiTinh;
+	private boolean gioiTinh;
 	private String queQuan;
 	private double luong;
 	private String chucVu;
@@ -29,7 +29,7 @@ public class Employee {
 		return chucVu;
 	}
 
-	public boolean isGioiTing() {
+	public boolean getGioiTinh() {
 		return gioiTinh;
 	}
 

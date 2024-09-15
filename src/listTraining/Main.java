@@ -118,8 +118,5 @@ public class Main {
 			}
 		}
 	}
-//	In ra tổng số nhân viên nam cùng với tên những nhân viên nam:
-	
-//	System.out.println("");
-	
+
 }

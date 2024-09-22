@@ -117,7 +117,7 @@ public class Main {
 		employeeList.add(hito2);
 		employeeList.add(hito3);
 		employeeList.add(hito6);
-
+		System.out.println(" ");
 //		in lương trên 20tr
 		System.out.println("danh sach nhan vien luong tren 20tr:");
 		for (Employee employee : employeeList) {

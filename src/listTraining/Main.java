@@ -119,6 +119,7 @@ public class Main {
 		employeeList.add(hito6);
 
 		System.out.println(" ");
+		
 //		in lương trên 20tr
 		System.out.println("danh sach nhan vien luong tren 20tr:");
 		for (Employee employee : employeeList) {
@@ -129,7 +130,7 @@ public class Main {
 		}
 
 		System.out.println(" ");
-		
+
 //		In ra tổng số nhân viên nam cùng với tên những nhân viên nam:
 		for (Employee employee : employeeList) {
 			if (employee.getGioiTinh()) {
